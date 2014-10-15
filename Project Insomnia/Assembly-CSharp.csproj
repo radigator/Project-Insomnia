@@ -46,9 +46,12 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Jump.cs" />
-     <Compile Include="Assets\Main.cs" />
-     <Compile Include="Assets\Segment.cs" />
+     <Compile Include="Assets\Code\Character.cs" />
+     <Compile Include="Assets\Code\DifficultyMonitor.cs" />
+     <Compile Include="Assets\Code\Main.cs" />
+     <Compile Include="Assets\Code\Platform.cs" />
+     <Compile Include="Assets\Code\Segment.cs" />
+     <Compile Include="Assets\Code\SegmentManager.cs" />
      <None Include="Assets\Standard Assets\Projectors\Guidelines.txt" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Particle Shaders\Mobile Multiply Culled.shader" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-Basic.shader" />
@@ -67,10 +70,8 @@
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-LightedOutline.shader" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-Lighted.shader" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Vertex Colored Shaders\Mobile Vertex Colored.shader" />
-     <None Include="Assets\Resources\palceholder.txt" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Lightmap Shaders (Legacy)\Mobile Lightmap Only.shader" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Lightmap Shaders (Legacy)\Mobile Lightmap AlphaTest.shader" />
-     <None Include="Assets\Code\placeholder.txt" />
      <None Include="Assets\Standard Assets\Tessellation Shaders\BumpedSpecularDisplacement.shader" />
   </ItemGroup>
   <ItemGroup>

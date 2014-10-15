@@ -1,0 +1,11 @@
+F:\School Work\Fall 14\Senior Project\Project\Project-Insomnia\Project Insomnia\Temp\bin\Debug\Assembly-CSharp-firstpass.dll
+F:\School Work\Fall 14\Senior Project\Project\Project-Insomnia\Project Insomnia\Temp\bin\Debug\Assembly-CSharp-firstpass.pdb
+F:\School Work\Fall 14\Senior Project\Project\Project-Insomnia\Project Insomnia\Temp\bin\Debug\UnityEditor.dll
+F:\School Work\Fall 14\Senior Project\Project\Project-Insomnia\Project Insomnia\Temp\bin\Debug\UnityEngine.dll
+F:\School Work\Fall 14\Senior Project\Project\Project-Insomnia\Project Insomnia\Temp\bin\Debug\Mono.Cecil.dll
+F:\School Work\Fall 14\Senior Project\Project\Project-Insomnia\Project Insomnia\Temp\bin\Debug\nunit.framework.dll
+F:\School Work\Fall 14\Senior Project\Project\Project-Insomnia\Project Insomnia\Temp\bin\Debug\Unity.DataContract.dll
+F:\School Work\Fall 14\Senior Project\Project\Project-Insomnia\Project Insomnia\Temp\bin\Debug\ICSharpCode.NRefactory.dll
+F:\School Work\Fall 14\Senior Project\Project\Project-Insomnia\Project Insomnia\obj\Debug\Assembly-CSharp-firstpass-vs.csprojResolveAssemblyReference.cache
+F:\School Work\Fall 14\Senior Project\Project\Project-Insomnia\Project Insomnia\obj\Debug\Assembly-CSharp-firstpass.dll
+F:\School Work\Fall 14\Senior Project\Project\Project-Insomnia\Project Insomnia\obj\Debug\Assembly-CSharp-firstpass.pdb
