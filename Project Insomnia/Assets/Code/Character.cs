@@ -83,11 +83,11 @@ public class Character : MonoBehaviour
 
     void JumpControl()
     {
-        
 
-        if(Input.GetAxis("Jump") == 1 && testGround())
+        
+        if ((Input.GetAxis("Jump") == 1 || Input.GetMouseButton(0)) && testGround())
             this.gameObject.rigidbody2D.AddForce(new Vector2(jumpForceFWD, jumpForce));
-        if (Input.GetAxis("Jump") == 0)
+        if (Input.GetAxis("Jump") == 0 && !Input.GetMouseButton(0))
             thersholdForceTime = 0.6f;
         
     }

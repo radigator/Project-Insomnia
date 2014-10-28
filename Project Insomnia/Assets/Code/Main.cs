@@ -43,25 +43,44 @@ public class Main : MonoBehaviour
         backGround.SetDaySelection(DaySegment);
         //Top Row y = 0
         //Bottom row y = 1;
-
+        /*
+        if(Random.Range(0, 2) == 1)
         segMan.triggerPlatform(0, 0, 0);
+        if (Random.Range(0, 2) == 1)
         segMan.triggerPlatform(0, 1, 0);
+        if (Random.Range(0, 2) == 1)
         segMan.triggerPlatform(0, 2, 0);
-        //segMan.triggerPlatform(0, 0, 1);
-        //segMan.triggerPlatform(0, 1, 1);
-        //segMan.triggerPlatform(0, 2, 1);
+        if (Random.Range(0, 2) == 1)
+        segMan.triggerPlatform(0, 0, 1);
+        if (Random.Range(0, 2) == 1)
+        segMan.triggerPlatform(0, 1, 1);
+        if (Random.Range(0, 2) == 1)
+        segMan.triggerPlatform(0, 2, 1);
+        if (Random.Range(0, 2) == 1)
         segMan.triggerPlatform(1, 0, 0);
+        if (Random.Range(0, 2) == 1)
         segMan.triggerPlatform(1, 1, 0);
+        if (Random.Range(0, 2) == 1)
         segMan.triggerPlatform(1, 2, 0);
-        //segMan.triggerPlatform(1, 0, 1);
-        //segMan.triggerPlatform(1, 1, 1);
-        //segMan.triggerPlatform(1, 2, 1);
+        if (Random.Range(0, 2) == 1)
+        segMan.triggerPlatform(1, 0, 1);
+        if (Random.Range(0, 2) == 1)
+        segMan.triggerPlatform(1, 1, 1);
+        if (Random.Range(0, 2) == 1)
+        segMan.triggerPlatform(1, 2, 1);
+        if (Random.Range(0, 2) == 1)
         segMan.triggerPlatform(2, 0, 0);
+        if (Random.Range(0, 2) == 1)
         segMan.triggerPlatform(2, 1, 0);
+        if (Random.Range(0, 2) == 1)
         segMan.triggerPlatform(2, 2, 0);
-        //segMan.triggerPlatform(2, 0, 1);
-        //segMan.triggerPlatform(2, 1, 1);
-        //segMan.triggerPlatform(2, 2, 1);
+        if (Random.Range(0, 2) == 1)
+        segMan.triggerPlatform(2, 0, 1);
+        if (Random.Range(0, 2) == 1)
+        segMan.triggerPlatform(2, 1, 1);
+        if (Random.Range(0, 2) == 1)
+        segMan.triggerPlatform(2, 2, 1);
+        */
 	}
 	
 	// Update is called once per frame

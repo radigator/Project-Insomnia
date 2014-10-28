@@ -49,21 +49,128 @@ public class Segment : MonoBehaviour
         }
     }
 
+    public void triggerPlatform(int xCoord, int yCoord, bool enabled)
+    {
+        //Convert 2D to 1D coordinates
+        int myPlatform = yCoord * (pForm.Length / 2) + xCoord;
+        //print("Triggering Platform: " + myPlatform);
+        if (enabled)
+        {
+            pForm[myPlatform].gameObject.renderer.enabled = true;
+            pForm[myPlatform].gameObject.collider2D.enabled = true;
+
+        }
+        else
+        {
+            pForm[myPlatform].gameObject.renderer.enabled = false;
+            pForm[myPlatform].gameObject.collider2D.enabled = false;
+        }
+    }
+
     void FixedUpdate()
     {
-        Moving();
+        
     }
 
     public void updateSpeed(float newSpeed)
     {
         segmentSpeed = newSpeed;
     }
-
-    void Moving()
+    //return if shifted to front
+    public bool Move()
     {
        
         this.gameObject.transform.position = new Vector3(this.gameObject.transform.position.x - segmentSpeed, 0, 0);
         if (this.gameObject.transform.position.x < -30)
+        {
             this.gameObject.transform.position = new Vector3(this.gameObject.transform.position.x + 90f, 0, 0);
+            return true;
+        }
+        return false;
+    }
+
+    public void changePlatformPattern(EnumTypes.PlatformMapType myPlatformSetup)
+    {
+        switch (myPlatformSetup)
+        {
+            case EnumTypes.PlatformMapType.Empty:
+
+                triggerPlatform(0, 0, false);
+                triggerPlatform(1, 0, false);
+                triggerPlatform(2, 0, false);
+                triggerPlatform(0, 1, false);
+                triggerPlatform(1, 1, false);
+                triggerPlatform(2, 1, false);
+                break;
+            case EnumTypes.PlatformMapType.A:
+                //Top
+                triggerPlatform(0, 0, false);
+                triggerPlatform(1, 0, true);
+                triggerPlatform(2, 0, false);
+                //Bottom
+                triggerPlatform(0, 1, true);
+                triggerPlatform(1, 1, false);
+                triggerPlatform(2, 1, true);
+                break;
+            case EnumTypes.PlatformMapType.BLine:
+                //Top
+                triggerPlatform(0, 0, true);
+                triggerPlatform(1, 0, true);
+                triggerPlatform(2, 0, true);
+                //Bottom
+                triggerPlatform(0, 1, false);
+                triggerPlatform(1, 1, false);
+                triggerPlatform(2, 1, false );
+                break;
+            case EnumTypes.PlatformMapType.ULine:
+                //Top
+                triggerPlatform(0, 0, false);
+                triggerPlatform(1, 0, false);
+                triggerPlatform(2, 0, false);
+                //Bottom
+                triggerPlatform(0, 1, true);
+                triggerPlatform(1, 1, true);
+                triggerPlatform(2, 1, true);
+                break;
+            case EnumTypes.PlatformMapType.V:
+                //Top
+                triggerPlatform(0, 0, true);
+                triggerPlatform(1, 0, false);
+                triggerPlatform(2, 0, true);
+                //Bottom
+                triggerPlatform(0, 1, false);
+                triggerPlatform(1, 1, true);
+                triggerPlatform(2, 1, false);
+                break;
+            case EnumTypes.PlatformMapType.TwoBottom:
+                //Top
+                triggerPlatform(0, 0, false);
+                triggerPlatform(1, 0, false);
+                triggerPlatform(2, 0, false);
+                //Bottom
+                triggerPlatform(0, 1, true);
+                triggerPlatform(1, 1, false);
+                triggerPlatform(2, 1, true);
+                break;
+            case EnumTypes.PlatformMapType.TwoTop:
+                //Top
+                triggerPlatform(0, 0, true);
+                triggerPlatform(1, 0, false);
+                triggerPlatform(2, 0, true);
+                //Bottom
+                triggerPlatform(0, 1, false);
+                triggerPlatform(1, 1, false);
+                triggerPlatform(2, 1, false);
+                break;
+
+            default:
+                triggerPlatform(0, 0, false);
+                triggerPlatform(1, 0, false);
+                triggerPlatform(2, 0, false);
+                triggerPlatform(0, 1, false);
+                triggerPlatform(1, 1, false);
+                triggerPlatform(2, 1, false);
+                break;
+        }
     }
 }
